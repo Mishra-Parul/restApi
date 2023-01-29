@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+  clipBoardhealth-exercise-app-container:
+    image: clipboardhealth-exercise-app:1
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    ports:
+      - "8080:8080"
